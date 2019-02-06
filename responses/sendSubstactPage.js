@@ -1,5 +1,6 @@
 'use strict';
 let state = require('/home/kali/Downloads/Node.js-master/week1/homework/src/index');
+let sum = state
 function sendSubstactPage(response) {
   response.setHeader('Content-Type', 'text/html');
   response.write(`
@@ -9,7 +10,7 @@ function sendSubstactPage(response) {
         <title>Hello</title>
       </head>
       <body>
-      ${state - 1}
+      ${sum -= 1}
       </body>
     </html>
   `);
